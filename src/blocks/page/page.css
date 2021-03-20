@@ -1,3 +1,11 @@
-.page.css {
-    background: #F0F0F0;
+.page {
+  background: #f0f0f0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  .page {
+    padding: 8px;
+  }
 }
