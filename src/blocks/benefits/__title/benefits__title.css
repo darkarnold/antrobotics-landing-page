@@ -1,0 +1,26 @@
+.benefits__title {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 43px;
+  color: #000;
+  max-width: 480px;
+  margin: 0;
+  padding: 110px 0 70px 100px;
+}
+
+@media screen and (max-width: 960px) {
+  .benefits__title {
+    padding-bottom: 82px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .benefits__title {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    padding: 50px 0 40px;
+    margin: 0 auto;
+  }
+}

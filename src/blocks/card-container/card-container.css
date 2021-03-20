@@ -1,0 +1,25 @@
+.card-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 100px 126px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px 0;
+}
+
+@media screen and (max-width: 960px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 90px 78px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card-container {
+    grid-template-columns: auto;
+    row-gap: 40px;
+    align-items: center;
+    justify-items: center;
+    padding: 0 12px 80px;
+  }
+}

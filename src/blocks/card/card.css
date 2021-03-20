@@ -1,0 +1,15 @@
+@import url("./__title/card__title.css");
+@import url("./__text/card__text.css");
+@import url("./__image-container/card__image-container.css");
+@import url("./__image-text/card__image-text.css");
+@import url("./__image/card__image.css");
+
+.card {
+  max-width: 235px;
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    max-width: 280px;
+  }
+}
