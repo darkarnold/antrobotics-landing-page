@@ -1,0 +1,113 @@
+.header {
+    max-width: 1260px;
+    min-height: 634px;
+    padding: 10px;
+    margin: 10px;
+    background: #242424;
+    color: #FFFFFF;
+    font-family: Inter;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.header__column-left-image {
+    width: 222px;
+    height: 354px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__column-main {
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__subtitle {
+    max-width: 320px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #A0A0A0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 92px;
+
+}
+
+
+.header__column-right-image {
+    width: 215px;
+    height: 284px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__logo-container {
+    position: relative;
+}
+
+.header__logo-icon {
+    width: 22.75px;
+    height: 27.85px;
+    position: absolute;
+    top: -21px;
+    left: 32px;
+}
+
+.header__button-1 {
+    width: 160px;
+    height: 42px;
+    background: #242424;
+    border: 1px solid #717171;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #A0A0A0;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.header__button-2 {
+    width: 160px;
+    height: 42px;
+    background: #FAA805;
+    border-radius: 6px;
+    border: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
