@@ -15,7 +15,6 @@
     grid-template-areas: "title carousel" "subtitle carousel" "list carousel"
 }
 
-
 .robots__title {
     max-width: 420px;
     font-style: normal;
@@ -62,39 +61,39 @@
     grid-area: carousel;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
     .robots {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
-    .robots__title{
+    .robots__title {
         text-align: center;
         margin-top: 80px
     }
-    .robots__subtitle{
+    .robots__subtitle {
         text-align: center;
     }
-    .robots__list{
+    .robots__list {
         text-align: center;
         max-width: 152px;
     }
-  }
-  
-  @media screen and (max-width: 720px){
-      .robots{
-          padding-left: 12px;
-          padding-right: 12px;
-          padding-top: 10px;
-          padding-bottom: 80px;
-      }
-    .robots__title{
+}
+
+@media screen and (max-width: 720px) {
+    .robots {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+    .robots__title {
         margin-top: 50px;
         max-width: 280px;
         font-size: 28px;
-line-height: 32px;
+        line-height: 32px;
     }
-    .robots__subtitle{
+    .robots__subtitle {
         max-width: 280px;
     }
-  } 
+}

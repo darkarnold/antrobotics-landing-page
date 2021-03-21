@@ -1,0 +1,53 @@
+/* .gallery{
+    margin-top: 10px;
+    font-family: Inter;
+    color: #000000;
+    background: #F9F9F9;
+    border-radius: 14px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+.gallery__title{
+    font-style: normal;
+font-weight: bold;
+font-size: 34px;
+line-height: 43px;text-align: center;
+}
+.gallery__image{
+    width: 660px;
+    height: 320px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.carousel_type_gallery{
+    position: relative;
+    max-width: 824px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.carousel__button-left_l{
+width: 52px;
+height: 52px;
+background-size: 18px 12px;
+align-self: center;
+}
+.carousel__button-right_l{
+    width: 52px;
+height: 52px;
+background-size: 18px 12px;
+align-self: center;
+
+}
+.carousel__caption{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+color: #525252;
+
+} */
