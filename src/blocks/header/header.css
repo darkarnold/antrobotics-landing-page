@@ -1,7 +1,5 @@
 .header {
-    max-width: 1260px;
     min-height: 634px;
-    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     background: #242424;
@@ -120,7 +118,6 @@
 
 @media screen and (max-width: 960px) {
     .header {
-        max-width: 748px;
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -135,9 +132,7 @@
 }
 
 @media screen and (max-width: 720px) {
-    .header {
-        max-width: 304px;
-    }
+    
     .header__buttons {
         display: flex;
         flex-direction: column;
