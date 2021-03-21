@@ -1,3 +1,26 @@
 .page.css {
     background: #F0F0F0;
 }
+.page__container{
+    max-width: calc(100vw - 20px);
+    margin: 0 auto; 
+}
+
+@media screen and (max-width: 1180px){
+    .page {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 960px){
+    .page {
+      max-width: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 720px){
+    .page {
+      max-width: 320px;
+    }
+  }

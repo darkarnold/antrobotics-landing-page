@@ -4,8 +4,8 @@
     max-height: 48px;
     position: fixed;
     top: 30px;
-    left: 110px;
-    right: 110px;
+    left: calc((100% - 1060px)/2);
+    right: calc((100% - 1060px)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,4 +52,31 @@
     line-height: 14px;
     letter-spacing: -0.04em;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1180px) {
+    .navbar {
+        left: calc((100% - 900px)/2);
+        right: calc((100% - 900px)/2);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        max-width: 708px;
+        left: calc((100% - 700px)/2);
+        right: calc((100% - 700px)/2);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        max-width: 280px;
+        top: 22px;
+        left: calc((100% - 280px)/2);
+        right: calc((100% - 280px)/2);
+    }
+    .navbar-list {
+        display: none;
+    }
 }

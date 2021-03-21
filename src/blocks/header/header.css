@@ -1,8 +1,9 @@
 .header {
     max-width: 1260px;
     min-height: 634px;
-    padding: 10px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
     background: #242424;
     color: #FFFFFF;
     font-family: Inter;
@@ -27,6 +28,8 @@
 }
 
 .header__column-main {
+    min-width: 420px;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -53,9 +56,7 @@
     margin-right: auto;
     margin-top: 16px;
     margin-bottom: 92px;
-
 }
-
 
 .header__column-right-image {
     width: 215px;
@@ -67,6 +68,9 @@
 
 .header__logo-container {
     position: relative;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .header__logo-icon {
@@ -76,7 +80,9 @@
     top: -21px;
     left: 32px;
 }
-
+.header__buttons{
+    
+}
 .header__button-1 {
     width: 160px;
     height: 42px;
@@ -110,4 +116,44 @@
     color: #FFFFFF;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        max-width: 748px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .header__column-right-image {
+        width: 134px;
+        height: 177px;
+    }
+    .header__column-left-image {
+        width: 111px;
+        height: 177px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        max-width: 304px;
+    }
+    .header__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__button-1{
+        margin-right:0;
+        margin-bottom: 10px;
+    }
+    .header__column-right-image {
+        display: none;
+    }
+    .header__column-left-image {
+        display: none;
+    }
+    .header__subtitle {
+        max-width: 280px;
+    }
 }
