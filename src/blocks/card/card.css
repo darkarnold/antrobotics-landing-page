@@ -1,8 +1,9 @@
 @import url("./__title/card__title.css");
 @import url("./__text/card__text.css");
-@import url("./__image-container/card__image-container.css");
+@import url("./__icon-container/card__icon-container.css");
 @import url("./__image-text/card__image-text.css");
 @import url("./__image/card__image.css");
+@import url("./__image-container/card__image-container.css");
 
 .card {
   max-width: 235px;
