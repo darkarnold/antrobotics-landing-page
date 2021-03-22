@@ -1,15 +1,7 @@
 .card__image-container {
-  max-width: 52px;
-  max-height: 52px;
+  background-image: url("https://via.placeholder.com/");
+  max-width: 235px;
+  height: 235px;
   border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
-  display: flex;
-  justify-content: center;
-}
-
-@media screen and (max-width: 720px) {
-  .card__image-container {
-    margin: 0 auto;
-  }
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.04);
 }

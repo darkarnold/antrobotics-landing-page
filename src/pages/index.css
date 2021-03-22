@@ -4,7 +4,9 @@
 @import url("../blocks/page/page.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/navbar/navbar.css");
-@import url("../blocks/benefits/benefits.css");
+@import url("../blocks/section/section.css");
 @import url("../blocks/card/card.css");
 @import url("../blocks/card-container/card-container.css");
 @import url("../blocks/favicon/favicon.css");
+@import url("../blocks/card/__text/_type/_center/card__text_type_center.css");
+@import url("../blocks/card/__text/_type/_bold/card__text_type_bold.css");

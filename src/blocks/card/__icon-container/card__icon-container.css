@@ -1,0 +1,15 @@
+.card__icon-container {
+  max-width: 52px;
+  max-height: 52px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 720px) {
+  .card__icon-container {
+    margin: 0 auto;
+  }
+}

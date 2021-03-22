@@ -1,0 +1,99 @@
+.robots {
+    margin-top: 10px;
+    font-family: Inter;
+    color: #000000;
+    background: #F9F9F9;
+    border-radius: 14px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-sizing: border-box;
+    grid-column-gap: 65px;
+    grid-template-areas: "title carousel" "subtitle carousel" "list carousel"
+}
+
+.robots__title {
+    max-width: 420px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 43px;
+    margin: 0;
+    padding: 0;
+    grid-area: title;
+}
+
+.robots__subtitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 22px;
+    margin-bottom: 40px;
+    max-width: 320px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    grid-area: subtitle;
+}
+
+.robots__list {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    color: #525252;
+    list-style-image: url("../../images/list-checks.svg");
+    grid-area: list;
+}
+
+.robots__list li {
+    margin-bottom: 10px;
+}
+
+.robots__carousel {
+    grid-area: carousel;
+}
+
+@media screen and (max-width: 960px) {
+    .robots {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .robots__title {
+        text-align: center;
+        margin-top: 80px
+    }
+    .robots__subtitle {
+        text-align: center;
+    }
+    .robots__list {
+        text-align: center;
+        max-width: 152px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .robots {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+    .robots__title {
+        margin-top: 50px;
+        max-width: 280px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .robots__subtitle {
+        max-width: 280px;
+    }
+}
