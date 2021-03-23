@@ -4,6 +4,8 @@
 @import url("./__image-text/card__image-text.css");
 @import url("./__image/card__image.css");
 @import url("./__image-container/card__image-container.css");
+@import url("./__subtitle/card__subtitle.css");
+@import url("./__avatar-container/card__avatar-container.css");
 
 .card {
   max-width: 235px;
