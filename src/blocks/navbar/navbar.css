@@ -1,0 +1,103 @@
+.navbar {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    max-width: 1060px;
+    min-height: 48px;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: calc((100% - 1060px)/2);
+    right: calc((100% - 1060px)/2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #393939;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+}
+
+.navbar-logo {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 14px;
+}
+
+.navbar-side-link {
+    margin: 0;
+    margin-right: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+.navbar__button {
+    background: url("../../images/hide_navlinks.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    border: 0;
+    width: 16px;
+    height: 14px;
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    .navbar {
+        left: calc((100% - 900px)/2);
+        right: calc((100% - 900px)/2);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        max-width: 708px;
+        left: calc((100% - 700px)/2);
+        right: calc((100% - 700px)/2);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        max-width: 280px;
+        top: 22px;
+        left: calc((100% - 280px)/2);
+        right: calc((100% - 280px)/2);
+    }
+    .navbar__button {
+        display: block;
+        margin-right: 12px;
+    }
+    .navbar-side-link {
+        margin-left: 100px;
+        margin-right: 22px;
+    }
+    .navbar-list {
+        display: none;
+    }
+}
