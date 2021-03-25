@@ -1,10 +1,10 @@
 .card-container {
   list-style-type: none;
   margin: 0;
-  padding: 0 100px 110px;
+  padding: 0 103px 110px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  column-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  column-gap: 39px;
 }
 
 @media screen and (max-width: 960px) {
@@ -20,6 +20,6 @@
     row-gap: 40px;
     align-items: center;
     justify-items: center;
-    padding: 0 12px 80px;
+    padding: 0 35px 80px;
   }
 }
