@@ -13,37 +13,13 @@
 
 <body class="page">
 
-    <nav class="navbar">
-      
-    </nav>
-    <header class="header">
-
-    </header>
-
     <main class="content">
-        <section class="robots">
-  
-        </section>
-        <section class="benefits">
-
-        </section>
-        <section class="gallery">
-           
-            
-        </section>
-        <section class="customer-benefits">
-            <!-- probably should be renamed -->
-        </section>
-        <section class="team">
-
-        </section>
+    
         <section class="contact-form">
           <h2 class="contact-form__title">Want to work with Us?</h2>
           <button class="contact-form__open">Click here!</button>
         </section>
-        <section class="contacts">
-
-        </section>
+        
     </main>
     <footer class="footer">
       <div class="footer__container">
@@ -69,20 +45,20 @@
             <button class="modal__button" type="button" aria-label="modal button">
                 <img class="modal__button-icon" src="./images/close-icon .png" alt="Close Icon">
             </button>
-            <form action="#" class="form" method="POST" name="form" novalidate>
+            <form action="#" class="form" method="POST" name="form">
             <h2 class="form__heading">Write us</h2>
 
                 <label for="#" class="form__input-label">
                     Name
-                    <input type="text" class="form__input">
+                    <input type="text" class="form__input" minlength="2" required>
                 </label>
                 <label for="#" class="form__input-label">
                     Email*
-                    <input type="text" class="form__input">
+                    <input type="email" class="form__input" required>
                 </label>
                 <label for="#" class="form__message-label">
                     Message
-                    <textarea class="form__message" name="message"  cols="30" rows="10"></textarea>
+                    <textarea  class="form__message" name="message"  cols="30" rows="10" minlength="5" required></textarea>
                 </label>
                 <button class="form__button">Submit</button>
             </form>

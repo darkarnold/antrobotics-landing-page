@@ -32,3 +32,27 @@
   border-radius: 6px;
   color: #ffffff;
 }
+
+/* TABLET */
+@media screen and (max-width: 958px) {
+  .contact-form {
+    padding: 20px 40px;
+  }
+}
+
+/* PHONE*/
+@media screen and (max-width: 414px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form__title {
+    min-width: 195px;
+    margin: 30px 14px 20px 15px;
+    /* margin-bottom: 20px; */
+  }
+  .contact-form__open {
+    margin-bottom: 40px;
+  }
+}

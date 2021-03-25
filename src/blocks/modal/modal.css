@@ -17,7 +17,7 @@
   padding: 21px 30px 40px 30px;
   border-radius: 6px;
   background: #ffff;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   position: relative;
 }
 
@@ -27,8 +27,11 @@
   padding: 0;
   width: 16px;
   height: 15.56px;
-  margin-left: 317.44px;
+  /* margin-left: 317.44px; */
+  margin-left: 257px;
+  margin-bottom: 3.44px;
 }
+
 .modal_open {
   display: flex;
   visibility: visible;
