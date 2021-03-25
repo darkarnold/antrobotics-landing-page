@@ -8,7 +8,7 @@
 @import url("./__avatar-container/card__avatar-container.css");
 
 .card {
-  max-width: 235px;
+  max-width: 240px;
 }
 
 @media screen and (max-width: 720px) {
