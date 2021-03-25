@@ -6,4 +6,8 @@
 @import url("../blocks/navbar/navbar.css");
 @import url("../blocks/robots/robots.css");
 @import url("../blocks/carousel/carousel.css");
-@import url("../blocks/gallery/gallery.css")
+@import url("../blocks/gallery/gallery.css");
+@import url("../blocks/contact-form/contact-form.css");
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/modal/modal.css");
+@import url("../blocks/form/form.css");
