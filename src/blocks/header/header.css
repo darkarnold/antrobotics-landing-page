@@ -1,10 +1,8 @@
 .header {
     min-height: 634px;
-    margin-right: auto;
-    margin-left: auto;
     background: #242424;
     color: #FFFFFF;
-    font-family: Inter;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     border-radius: 14px;
     -webkit-border-radius: 14px;
     -moz-border-radius: 14px;
@@ -25,11 +23,34 @@
     padding: 0;
 }
 
+.header__column-right-image {
+    width: 215px;
+    height: 284px;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
 .header__column-main {
     min-width: 420px;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+.header__logo-container {
+    position: relative;
+    max-width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header__logo-icon {
+    width: 22.75px;
+    height: 27.85px;
+    position: absolute;
+    top: -21px;
+    left: 32px;
 }
 
 .header__logo-title {
@@ -56,31 +77,6 @@
     margin-bottom: 92px;
 }
 
-.header__column-right-image {
-    width: 215px;
-    height: 284px;
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header__logo-container {
-    position: relative;
-    max-width: 320px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.header__logo-icon {
-    width: 22.75px;
-    height: 27.85px;
-    position: absolute;
-    top: -21px;
-    left: 32px;
-}
-.header__buttons{
-    
-}
 .header__button-1 {
     width: 160px;
     height: 42px;
@@ -132,14 +128,22 @@
 }
 
 @media screen and (max-width: 720px) {
-    
+    .header {
+        min-height: 493px;
+        padding-top: 65px;
+    }
+    .header__subtitle {
+        margin-bottom: 60px;
+        max-width: 280px;
+    }
+    .header__logo-container {}
     .header__buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .header__button-1{
-        margin-right:0;
+    .header__button-1 {
+        margin-right: 0;
         margin-bottom: 10px;
     }
     .header__column-right-image {
@@ -147,8 +151,5 @@
     }
     .header__column-left-image {
         display: none;
-    }
-    .header__subtitle {
-        max-width: 280px;
     }
 }

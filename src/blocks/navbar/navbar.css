@@ -1,15 +1,16 @@
 .navbar {
-    font-family: Inter;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     max-width: 1060px;
-    max-height: 48px;
+    min-height: 48px;
     position: fixed;
+    z-index: 1;
     top: 30px;
     left: calc((100% - 1060px)/2);
     right: calc((100% - 1060px)/2);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+    background: #393939;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
     border-radius: 6px;
 }
@@ -45,6 +46,7 @@
 }
 
 .navbar-side-link {
+    margin: 0;
     margin-right: 30px;
     font-style: normal;
     font-weight: bold;
@@ -52,6 +54,17 @@
     line-height: 14px;
     letter-spacing: -0.04em;
     color: #FFFFFF;
+}
+
+.navbar__button {
+    background: url("../../images/hide_navlinks.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    border: 0;
+    width: 16px;
+    height: 14px;
+    display: none;
 }
 
 @media screen and (max-width: 1180px) {
@@ -75,6 +88,14 @@
         top: 22px;
         left: calc((100% - 280px)/2);
         right: calc((100% - 280px)/2);
+    }
+    .navbar__button {
+        display: block;
+        margin-right: 12px;
+    }
+    .navbar-side-link {
+        margin-left: 100px;
+        margin-right: 22px;
     }
     .navbar-list {
         display: none;
