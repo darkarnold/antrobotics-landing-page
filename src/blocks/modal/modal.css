@@ -17,6 +17,8 @@
   padding: 21px 30px 40px 30px;
   border-radius: 6px;
   background: #ffff;
+
+  /* box-sizing: border-box; */
   position: relative;
 }
 
