@@ -46,7 +46,7 @@
   font-weight: 400;
 }
 .footer__map {
-  width: 550px;
+  width: 560px;
   height: 430px;
   border: 0.1px solid red;
 }
@@ -64,10 +64,6 @@
 
 /* TABLET */
 @media screen and (max-width: 958px) {
-  .contact-form {
-    padding: 20px 40px;
-    margin-top: 10px;
-  }
   .footer {
     padding: 110px 40px 160px 40px;
   }
@@ -91,5 +87,24 @@
     position: absolute;
     top: 954px;
     margin: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .footer {
+    padding: 50px 12px 88px 12px;
+    margin-bottom: 0;
+    border-radius: 0px;
+  }
+  .footer__contacts-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 40px 0;
+  }
+  .footer__contacts-item {
+    width: 280px;
+  }
+  .footer__map {
+    height: 370px;
   }
 }
