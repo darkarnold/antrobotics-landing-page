@@ -23,8 +23,8 @@
     background: #EFEFEF;
     color: #000000;
 }
-.navbar_light .navbar_list a{
-    color: #000000;
+.navbar_light .navbar_list li a{
+    color: #000000 !important;
     text-decoration: none;
 }
 .navbar-logo {

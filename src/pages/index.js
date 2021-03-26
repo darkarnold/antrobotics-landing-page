@@ -36,12 +36,13 @@ contactModal.addEventListener("click", (evt) => {
 });
 
 const navbar = document.querySelector('.navbar');
-window.onscroll = function(){
-    if (window.scrollY > 620) {
-        navbar.classList.add('navbar_light');
-        navbar.classList.remove('navbar_dark');
-    } else {
-        navbar.classList.remove('navbar_light');
-        navbar.classList.add('navbar_dark');
-    }
-};
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > header.offsetHeight - 20) {
+    navbar.classList.add('navbar_light');
+    navbar.classList.remove('navbar_dark');
+  } else {
+    navbar.classList.remove('navbar_light');
+    navbar.classList.add('navbar_dark');
+  }
+})
