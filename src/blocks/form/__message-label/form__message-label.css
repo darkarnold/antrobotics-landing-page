@@ -1,0 +1,10 @@
+.form__message-label {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}

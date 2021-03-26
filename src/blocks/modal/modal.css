@@ -1,3 +1,6 @@
+@import url(./__button/modal__button.css);
+@import url(./__container/modal__container.css);
+
 .modal {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -11,41 +14,4 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.5s, opacity 0.5s linear;
-}
-.modal__container {
-  width: 384px;
-  height: 527px;
-  background: #ffffff;
-  border-radius: 6px;
-}
-
-.modal__button {
-  background: none;
-  border: none;
-  padding: 0;
-  width: 16px;
-  height: 15.56px;
-  margin-left: 347px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.modal_open {
-  display: flex;
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0s;
-}
-
-@media screen and (max-width: 414px) {
-  .modal__container {
-    width: 320px;
-    height: 570px;
-  }
-  .modal__button {
-    height: 15.56px;
-    margin-left: 277px;
-    margin-bottom: -5px;
-    margin-top: 20px;
-  }
 }

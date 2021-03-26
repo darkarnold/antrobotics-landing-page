@@ -1,0 +1,10 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1180px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+}

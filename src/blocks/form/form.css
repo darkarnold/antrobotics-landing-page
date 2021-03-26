@@ -1,3 +1,10 @@
+@import url(./__heading/form__heading.css);
+@import url(./__input-label/form__input-label.css);
+@import url(./__message-label/form__message-label.css);
+@import url(./__input/form__input.css);
+@import url(./__message/form__message.css);
+@import url(./__button/form__button.css);
+
 .form {
   display: flex;
   flex-direction: column;
@@ -7,89 +14,9 @@
   margin: auto;
 }
 
-.form__heading {
-  margin: 3.44px 0 30px 0;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 34px;
-  text-align: center;
-}
-.form__input-label {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-}
-.form__message-label {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-}
-.form__input {
-  background: #ffffff;
-  border: 1px solid #c4c4c4;
-  box-sizing: border-box;
-  border-radius: 4px;
-  height: 44px;
-  padding: 0;
-  margin: 10px 0 20px 0;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.form__message {
-  margin: 10px 0 30px 0;
-  max-width: 100%;
-  height: 100px;
-  background: #ffffff;
-  border: 1px solid #c4c4c4;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 0;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.form__button {
-  min-height: 44px;
-  background: #000000;
-  border-radius: 44px;
-  color: #ffffff;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  border: none;
-  padding: 0;
-}
-
 /* PHONE*/
 @media screen and (max-width: 414px) {
   .form {
     width: 280px;
-  }
-  .form__message {
-    margin: 10px 0 81px 0;
-  }
-  .form__heading {
-    margin: 0 0 30px 0;
   }
 }

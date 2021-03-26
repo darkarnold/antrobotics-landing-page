@@ -10,6 +10,7 @@
 @import url("../blocks/contact-form/contact-form.css");
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/modal/modal.css");
+@import url("../blocks/modal/_open/modal_open.css");
 @import url("../blocks/form/form.css");
 @import url("../blocks/benefits/benefits.css");
 @import url("../blocks/section/section.css");

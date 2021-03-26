@@ -1,0 +1,17 @@
+.contact-form__title {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 414px) {
+  .contact-form__title {
+    min-width: 195px;
+    margin: 30px 14px 20px 15px;
+    /* margin-bottom: 20px; */
+  }
+}

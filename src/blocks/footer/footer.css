@@ -1,65 +1,16 @@
+@import url(./__container/footer__container.css);
+@import url(./__contacts/footer__contacts.css);
+@import url(./__location/footer__location.css);
+@import url(./__contacts-title/footer__contacts-title.css);
+@import url(./__contacts-list/footer__contacts-list.css);
+@import url(./__contacts-item/footer__contacts-item.css);
+@import url(./__contacts-info/footer__contacts-info.css);
+@import url(./__copyright/footer__copyright.css);
 .footer {
   background: #f9f9f9;
   border-radius: 14px;
   margin: 10px 0;
   padding: 110px 100px;
-}
-.footer__container {
-  display: flex;
-  justify-content: space-between;
-}
-.footer__contacts {
-  margin-right: 80px;
-}
-.footer__contacts-title {
-  margin: 0 0 50px 0;
-  padding: 0;
-  font-family: Inter Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 43px;
-  color: #000000;
-}
-
-.footer__contacts-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footer__contacts-item {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.04em;
-  color: #000000;
-  margin-bottom: 12px;
-}
-.footer__contacts-item:last-child {
-  text-decoration-line: underline;
-  margin-bottom: 206px;
-}
-.footer__contacts-info {
-  font-style: normal;
-  font-weight: 400;
-}
-.footer__map {
-  width: 560px;
-  height: 430px;
-  border: 0.1px solid red;
-}
-
-.footer__copyright {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.04em;
-
-  color: #525252;
 }
 
 /* TABLET */
@@ -67,44 +18,11 @@
   .footer {
     padding: 110px 40px 160px 40px;
   }
-  .footer__container {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer__contacts {
-    margin-right: 0;
-  }
-  .footer__contacts-item:last-child {
-    text-decoration-line: underline;
-    margin-bottom: 60px;
-  }
-  .footer__map {
-    width: 100%;
-    height: 430px;
-    margin-bottom: 40px;
-  }
-  .footer__copyright {
-    position: absolute;
-    top: 954px;
-    margin: 0;
-  }
 }
 @media screen and (max-width: 414px) {
   .footer {
     padding: 50px 12px 88px 12px;
     margin-bottom: 0;
     border-radius: 0px;
-  }
-  .footer__contacts-title {
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 32px;
-    margin: 0 0 40px 0;
-  }
-  .footer__contacts-item {
-    width: 280px;
-  }
-  .footer__map {
-    height: 370px;
   }
 }

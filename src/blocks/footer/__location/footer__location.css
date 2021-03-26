@@ -1,0 +1,22 @@
+.footer__location {
+  width: 560px;
+  height: 430px;
+}
+
+@media screen and (max-width: 1180px) {
+  .footer__location {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 958px) {
+  .footer__location {
+    width: 100%;
+    height: 430px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .footer__location {
+    height: 370px;
+  }
+}

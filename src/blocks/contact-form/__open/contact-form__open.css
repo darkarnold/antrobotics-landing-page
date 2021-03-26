@@ -1,0 +1,21 @@
+.contact-form__open {
+  padding: 12px 44px;
+  border: none;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  width: 160px;
+  height: 42px;
+  background: #faa805;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 414px) {
+  .contact-form__open {
+    margin-bottom: 40px;
+  }
+}
