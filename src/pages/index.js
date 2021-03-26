@@ -34,3 +34,14 @@ contactModal.addEventListener("click", (evt) => {
     closePopup(contactModal);
   }
 });
+
+const navbar = document.querySelector('.navbar');
+window.onscroll = function(){
+    if (window.scrollY > 620) {
+        navbar.classList.add('navbar_light');
+        navbar.classList.remove('navbar_dark');
+    } else {
+        navbar.classList.remove('navbar_light');
+        navbar.classList.add('navbar_dark');
+    }
+};
