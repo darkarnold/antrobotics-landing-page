@@ -36,12 +36,15 @@ contactModal.addEventListener("click", (evt) => {
 });
 
 const navbar = document.querySelector('.navbar');
+const navbarButton = navbar.querySelector(".navbar__button")
 window.addEventListener("scroll", function () {
   const header = document.querySelector(".header");
   if (window.scrollY > header.offsetHeight - 20) {
-    navbar.classList.add('navbar_light');
     navbar.classList.remove('navbar_dark');
+    navbar.classList.add('navbar_light');
+    navbarButton.classList.add('navbar__button_dark');
   } else {
+    navbarButton.classList.remove('navbar__button_dark');
     navbar.classList.remove('navbar_light');
     navbar.classList.add('navbar_dark');
   }
