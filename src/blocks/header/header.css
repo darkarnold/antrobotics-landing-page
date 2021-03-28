@@ -32,7 +32,7 @@
 }
 
 .header__column-main {
-    min-width: 420px;
+    max-width: 420px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -136,7 +136,9 @@
         margin-bottom: 60px;
         max-width: 280px;
     }
-    .header__logo-container {}
+    .header__column-main {
+        max-width: 280px;
+    }
     .header__buttons {
         display: flex;
         flex-direction: column;
