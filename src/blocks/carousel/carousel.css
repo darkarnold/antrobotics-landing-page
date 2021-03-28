@@ -103,6 +103,7 @@ padding: 0; */
   width: 43px;
   height: 13px;
   position: absolute;
+  /* left: 8px; */
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
@@ -120,6 +121,7 @@ padding: 0; */
   width: 43px;
   height: 13px;
   position: absolute;
+  /* right: 8px; */
   right: 12px;
   top: 50%;
   transform: translateY(-50%);
@@ -135,6 +137,8 @@ padding: 0; */
   .carousel__item {
     width: 575px;
     height: 100%;
+    grid-template-columns: 42% 1fr;
+    grid-column-gap: 33px;
   }
   .carousel__item-title {
     margin-top: 0;

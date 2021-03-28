@@ -40,6 +40,11 @@
   line-height: 20px;
   grid-area: subtitle;
 }
+.robots__list-icon {
+  width: 15px;
+  height: 10px;
+  margin-right: 10px;
+}
 
 .robots__list {
   font-style: normal;
@@ -47,15 +52,16 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.04em;
-  list-style-position: inside;
+  /* list-style-position: inside; */
   /* margin: 0; */
   padding: 0;
   color: #525252;
-  list-style-image: url("../../images/list-checks.svg");
-  grid-area: list;
+  /* list-style-image: url("../../images/list-checks.svg"); */
+  /* grid-area: list; */
+  list-style: none;
 }
 
-.robots__list li {
+.robots__list-item {
   margin-bottom: 10px;
 }
 
@@ -72,13 +78,25 @@
   .robots__title {
     text-align: center;
     margin-top: 80px;
+    margin-bottom: 14px;
   }
   .robots__subtitle {
     text-align: center;
+    margin-bottom: 36px;
   }
   .robots__list {
     text-align: center;
     max-width: 152px;
+    margin: 0;
+  }
+  .robots__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .robots__list-icon {
+    margin: 0;
   }
 }
 
