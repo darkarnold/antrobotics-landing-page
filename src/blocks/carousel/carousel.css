@@ -100,6 +100,8 @@ padding: 0; */
 }
 
 .carousel__button-left_size_s {
+  /* width: 18px;
+  height: 12px; */
   width: 43px;
   height: 13px;
   position: absolute;
@@ -120,6 +122,8 @@ padding: 0; */
 .carousel__button-right_size_s {
   width: 43px;
   height: 13px;
+  /* width: 18px;
+  height: 12px; */
   position: absolute;
   /* right: 8px; */
   right: 12px;
@@ -155,6 +159,9 @@ padding: 0; */
     text-align: center;
     padding-top: 30px;
     padding-bottom: 36px;
+  }
+  .carousel__item-list {
+    margin-bottom: 30px;
   }
   .carousel__image-container {
     display: block;
