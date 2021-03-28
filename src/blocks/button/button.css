@@ -1,0 +1,24 @@
+@import url("./__wrapper/button__wrapper.css");
+
+.button {
+  position: absolute;
+  background-color: transparent;
+  width: 18px;
+  height: 12px;
+  color: #000;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-position: center;
+  mix-blend-mode: normal;
+}
+
+@media screen and (max-width: 720px) {
+  .button {
+    width: 15.23px;
+    height: 10.15px;
+  }
+}

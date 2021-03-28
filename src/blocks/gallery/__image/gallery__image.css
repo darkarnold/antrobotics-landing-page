@@ -1,0 +1,6 @@
+.gallery__image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.04);
+}

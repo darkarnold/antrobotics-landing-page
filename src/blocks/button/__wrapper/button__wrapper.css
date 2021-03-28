@@ -1,0 +1,14 @@
+.button__wrapper {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 720px) {
+  .button__wrapper {
+    width: 44px;
+    height: 44px;
+  }
+}

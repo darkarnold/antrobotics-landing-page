@@ -1,0 +1,18 @@
+.button__wrapper_left {
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 960px) {
+  .button__wrapper_left {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .button__wrapper_left {
+    top: 95%;
+    left: 12px;
+  }
+}

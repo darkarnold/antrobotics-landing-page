@@ -1,0 +1,12 @@
+.gallery__carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 824px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  position: relative;
+}
