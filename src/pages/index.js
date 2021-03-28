@@ -1,4 +1,6 @@
 import Section from "../script/components/Section.js";
+import { benefitsCards, customerBenefitsCards, teamCards } from "../script/utils/constants.js";
+
 const contactModal = document.querySelector(".modal");
 const formButton = document.querySelector(".contact-form__open");
 const closeButton = document.querySelector(".modal__button");
@@ -51,48 +53,48 @@ window.addEventListener("scroll", function () {
   }
 })
 
-const initialCards = [
-  {
-    path: "../images/cloud-img.svg",
-    title: "Labor-intensive dolly movements",
-    text: "Challenges: It is more and more difficult to hire workers, because they prefer to work in delivery services for the same money."
-  },
-  {
-    path: "../images/box-img.svg",
-    title: "Forklifts, tuggers managed by man",
-    text: "Challenges: It is more and more difficult to hire forklift drivers  because they prefer to work in delivery for the same money."
-  },
-  {
-    path: "../images/box-img.svg",
-    title: "Follow-the-line robots",
-    text: "Challenges: It is time-consuming and expensive to replace old robots by state-of-the art, but produced by another vendor."
-  },
-  {
-    path: "../images/box-img.svg",
-    title: "Autonomous mobile robots ",
-    text: "Challenges: Limited upgrade options within the same vendor robot line only and too expensive to use another vendor robots."
-  }
-]
-
 
 const cardList = new Section({
-  items: initialCards,
+  items: benefitsCards,
   renderer: (item) => {
-    const cardElement = getNewCardElement(item);
+    const cardElement = getNewCardElement(item, ".card-template_benefits");
     cardList.addItem(cardElement);
   }
-}, ".section_type_automation");
+}, ".card-container_benefits");
 cardList.render();
 
-function getNewCardElement(item){ 
-  const cardTemplate = document.querySelector(".card-template").content.querySelector(".card");
+const cardListCustomerBenefits = new Section({
+  items: customerBenefitsCards,
+  renderer: (item) => {
+    const cardElement = getNewCardElement(item, ".card-template_customer-benefits");
+    console.log(cardElement)
+    cardListCustomerBenefits.addItem(cardElement);
+  }
+}, ".card-container_customer-benefits");
+cardListCustomerBenefits.render();
+
+const cardListTeam = new Section({
+  items: teamCards,
+  renderer: (item) => {
+    const cardElement = getNewCardElement(item, ".card-template_team");
+    console.log(cardElement)
+    cardListTeam.addItem(cardElement);
+  }
+}, ".card-container_team");
+cardListTeam.render();
+
+function getNewCardElement(item, selector) {
+  const cardTemplate = document.querySelector(selector).content.querySelector(".card");
   const card = cardTemplate.cloneNode(true);
-  const cardImage = card.querySelector("card__image");
+  const cardImage = card.querySelector(".card__image");
   const cardTitle = card.querySelector(".card__title");
   const cardText = card.querySelector(".card__text");
   cardImage.src = item.path;
-  cardImage.alt = item.path;
   cardTitle.textContent = item.title
-  cardText.textContent = item.text;
-} 
-
+  cardText.innerHTML = item.text;
+  if (item.subtitle) {
+    const cardSubtitle = card.querySelector(".card__subtitle");
+    cardSubtitle.textContent = item.subtitle;
+  }
+  return card
+}
