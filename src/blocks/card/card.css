@@ -9,6 +9,7 @@
 
 .card {
   max-width: 240px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 720px) {
