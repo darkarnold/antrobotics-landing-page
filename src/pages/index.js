@@ -67,7 +67,6 @@ const cardListCustomerBenefits = new Section({
   items: customerBenefitsCards,
   renderer: (item) => {
     const cardElement = getNewCardElement(item, ".card-template_customer-benefits");
-    console.log(cardElement)
     cardListCustomerBenefits.addItem(cardElement);
   }
 }, ".card-container_customer-benefits");
@@ -77,7 +76,6 @@ const cardListTeam = new Section({
   items: teamCards,
   renderer: (item) => {
     const cardElement = getNewCardElement(item, ".card-template_team");
-    console.log(cardElement)
     cardListTeam.addItem(cardElement);
   }
 }, ".card-container_team");
@@ -96,5 +94,5 @@ function getNewCardElement(item, selector) {
     const cardSubtitle = card.querySelector(".card__subtitle");
     cardSubtitle.textContent = item.subtitle;
   }
-  return card
+  return card;
 }

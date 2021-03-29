@@ -112,7 +112,7 @@
     </section>
 
     <section class="section section_type_team" id="team">
-      <h2 class="section__title card__text_type_center">Team</h2>
+      <h2 class="section__title_team ">Team</h2>
       <ul class="card-container card-container_team">
       </ul>
 
@@ -171,14 +171,27 @@
       </form>
     </div>
   </div>
+  <div class="navbar__popup" hidden>
+    <div class="navbar__popup-container">
+      <ul class="navbar__popup-list">
+        <li class="navbar__popup-item"><a href="#robots" class="navbar__popup-link">Robots</a></li>
+        <li class="navbar__popup-item"><a href="#benefits" class="navbar__popup-link">Benefits</a></li>
+        <li class="navbar__popup-item"><a href="#gallery" class="navbar__popup-link">Gallery</a></li>
+        <li class="navbar__popup-item"><a href="#customer-benefits" class="navbar__popup-link">Will it work for me?</a>
+        </li>
+        <li class="navbar__popup-item"><a href="#team" class="navbar__popup-link">Team</a></li>
+        <li class="navbar__popup-item"><a href="#contact-form" class="navbar__popup-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
 
   <template class="card-template_benefits">
     <li class="card">
       <div class="card__icon-container">
-        <img src="#" alt="tech-icon" class="card__image">
+        <img src="#" alt="tech-icon" class="card__image card__image_icon">
       </div>
       <h3 class="card__title"></h3>
-      <p class="card__text">
+      <p class="card__text card__text_section_benefits">
       </p>
     </li>
   </template>
@@ -188,20 +201,21 @@
         <img src="#" alt="customer-benefits" class="card__image">
       </div>
       <h3 class="card__title card__text_type_center"></h3>
-      <p class="card__text card__text_type_center "></p>
+      <p class="card__text card__text_type_center card__text_section_customer "></p>
     </li>
   </template>
   <template class="card-template_team">
     <li class="card">
       <div class="card__avatar-container">
-        <img src="#" alt="team member" class="card__image">
+        <img src="#" alt="team member" class="card__image card__image_icon">
       </div>
       <h3 class="card__title card__text_type_center"></h3>
       <h4 class="card__subtitle"></h4>
-      <p class="card__text card__text_type_center"></p>
+      <p class="card__text card__text_type_center card__text_section_team"></p>
     </li>
   </template>
   <script type="module" src="./pages/index.js"></script>
+  <script src="./pages/nav.js"></script>
 </body>
 
 </html>
