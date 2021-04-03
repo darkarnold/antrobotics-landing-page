@@ -10,11 +10,14 @@ const modalContactForm = new ModalWithForm({
   }
 })
 modalContactForm.setEventListeners();
-const formButton = document.querySelector(".contact-form__open");
-formButton.addEventListener("click", ()=>{
+const contactFormButton = document.querySelector(".contact-form__open");
+contactFormButton.addEventListener("click", ()=>{
   modalContactForm.open();
 });
-
+const robotsFormButton = document.querySelector(".carousel__button");
+robotsFormButton.addEventListener("click", ()=>{
+  modalContactForm.open();
+});
 
 const navbar = document.querySelector('.navbar');
 const navbarButton = navbar.querySelector(".navbar__button")
