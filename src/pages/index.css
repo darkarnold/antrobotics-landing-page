@@ -17,7 +17,6 @@
 @import url("../blocks/card-container/card-container.css");
 @import url("../blocks/favicon/favicon.css");
 @import url("../blocks/card/__text/_type/_center/card__text_type_center.css");
-@import url("../blocks/card/__text/_type/_bold/card__text_type_bold.css");
 
 @import url("../blocks/button/button.css");
 @import url("../blocks/button/__wrapper/_right/button__wrapper_right.css");
@@ -29,3 +28,6 @@
 @import url("../blocks/card/__text/_section/card__text_section_customer.css");
 @import url("../blocks/card/__text/_section/card__text_section_team.css");
 @import url("../blocks/section/__title/_team/section__title_team.css");
+@import url("../blocks/carousel/__item/_type/carousel__item_type_initial.css");
+@import url("../blocks/carousel/__button-nav/_left/carousel__button-nav_left.css");
+@import url("../blocks/carousel/__button-nav/_right/carousel__button-nav_right.css");

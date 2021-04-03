@@ -1,0 +1,5 @@
+.carousel__item_type_prev {
+  /* move image to left*/
+  z-index: -1;
+  transform: translateX(-100%);
+}

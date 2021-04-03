@@ -1,0 +1,11 @@
+.carousel__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 720px) {
+  .carousel__image-container {
+    display: block;
+  }
+}
