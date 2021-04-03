@@ -19,9 +19,11 @@
   background: #393939;
   color: #ffffff;
 }
+
 .navbar_dark .navbar__list-item {
   color: #ffffff;
 }
+
 .navbar_light {
   text-decoration: none;
   background: #efefef;
@@ -90,6 +92,7 @@
 .navbar__button_dark {
   filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%)
     hue-rotate(304deg) brightness(97%) contrast(103%);
+    /* background: url("../../images/hide_navlink_black.svg"); */
 }
 
 @media screen and (max-width: 1180px) {
@@ -123,15 +126,14 @@
     margin-right: 22px;
   }
   .navbar__list {
-    display: none;
-  }
-  /* new stuff */
-  .navbar__button_active {
-    background: url("../../images/close-navlinks.svg");
-    background-repeat: no-repeat;
-    background-size: 14px 14px;
-  }
-  .navbar__popup {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: transparent;
     display: flex;
     height: 100%;
@@ -144,8 +146,6 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s linear 0.5s, opacity 0.5s linear;
-  }
-  .navbar__popup-container {
     font-family: "Inter", Arial, Helvetica, sans-serif;
     width: 280px;
     height: 214px;
@@ -163,6 +163,25 @@
     background: #393939;
     text-align: center;
   }
+  .navbar_dark .navbar__list {
+    color: #ffffff;
+  }
+  .navbar_light .navbar__list {
+    color: #000000;
+    background: #efefef;
+  }
+  .navbar__button_active {
+    background: url("../../images/close-navlinks.svg");
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+  }
+  
+  .navbar__button_active_dark {
+    /* background: url("../../images/close-navlinks-dark.svg"); */
+    filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%)
+    hue-rotate(304deg) brightness(97%) contrast(103%);
+  }
+
   .navbar__popup-container-light {
     background: #efefef;
     color: #000000;
