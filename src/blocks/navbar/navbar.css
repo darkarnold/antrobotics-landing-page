@@ -85,6 +85,7 @@
   width: 16px;
   height: 14px;
   display: none;
+  cursor: pointer;
 }
 .navbar__button_dark {
   filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%)
