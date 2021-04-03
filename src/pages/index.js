@@ -3,8 +3,10 @@ import {
   benefitsCards,
   customerBenefitsCards,
   teamCards,
+  robotProducts,
 } from "../script/utils/constants.js";
 import ModalWithForm from "../script/components/ModalWithForm.js";
+import Carousel from "../script/components/Carousel.js";
 
 const modalContactForm = new ModalWithForm({
   modalSelector: ".modal",
@@ -90,3 +92,11 @@ function getNewCardElement(item, selector) {
   }
   return card;
 }
+
+// carousel
+const robot = new Carousel({
+  carouselSelector: "carousel__items",
+  items: robotProducts,
+});
+
+robot.setEventListeners();

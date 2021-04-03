@@ -81,4 +81,35 @@ const teamCards = [
       "Computer Vision and AI guru, MS Software Engineering (CMU). Head of Acronis SIT Autonomous Team, Roborace. ",
   },
 ];
-export { benefitsCards, customerBenefitsCards, teamCards };
+
+const robotProducts = [
+  {
+    path: "./images/robots1.svg",
+    title: "OTTO 100 (pending)",
+    maxpayload: "220 lbs (100kg)",
+    size: "740 x 550 x 310 mm",
+    maxspeed: "4.3 mph",
+    runningtime: "4 hrs or 9mi",
+    chargingtime: "1.2 hrs (0-80%: 0.75 hrs)",
+  },
+  {
+    path: "https://unsplash.com/photos/1DjbGRDh7-E",
+    title: "TX1000",
+    maxpayload: "300 lbs(136kg)",
+    size: "800 x 400 x210 mm",
+    maxspeed: "5.4mph",
+    runningtime: "5 hrs",
+    chargingtime: "1hr(0-70%: 0.45hrs)",
+  },
+  {
+    path:
+      "https://images.unsplash.com/photo-1580835239846-5bb9ce03c8c3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTh8fHJvYm90c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    title: "M8120",
+    maxpayload: "150lbs(68kg)",
+    size: "600 x 300 x 150 mm",
+    maxspeed: "4.5mph",
+    runningtime: " 3 hrs",
+    chargingtime: "3hrs(0-50%: 1hr)",
+  },
+];
+export { benefitsCards, customerBenefitsCards, teamCards, robotProducts };
