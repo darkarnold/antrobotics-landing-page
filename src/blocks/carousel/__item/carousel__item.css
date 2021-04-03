@@ -1,0 +1,39 @@
+.carousel__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 43% 1fr;
+  box-sizing: border-box;
+  grid-column-gap: 31px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1180px) {
+  .carousel__item {
+    grid-column-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .carousel__item {
+    width: 575px;
+    height: 100%;
+    grid-template-columns: 42% 1fr;
+    grid-column-gap: 33px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .carousel__item {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 36px;
+  }
+}
