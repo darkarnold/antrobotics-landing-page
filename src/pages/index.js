@@ -1,42 +1,20 @@
 import Section from "../script/components/Section.js";
 import { benefitsCards, customerBenefitsCards, teamCards } from "../script/utils/constants.js";
+import ModalWithForm from "../script/components/ModalWithForm.js";
 
-const contactModal = document.querySelector(".modal");
+const modalContactForm = new ModalWithForm({
+  modalSelector: ".modal",
+  handleFormSubmit: (inputValues) =>{
+    console.log(inputValues, form)
+    modalContactForm.close()
+  }
+})
+modalContactForm.setEventListeners();
 const formButton = document.querySelector(".contact-form__open");
-const closeButton = document.querySelector(".modal__button");
-
-function openPopup(modalOpen) {
-  modalOpen.classList.add("modal_open");
-  document.addEventListener("keydown", closeByEscape);
-}
-
-function openModal() {
-  openPopup(contactModal);
-}
-formButton.addEventListener("click", openModal);
-
-function closePopup(modalClose) {
-  modalClose.classList.remove("modal_open");
-  document.removeEventListener("keydown", closeByEscape);
-}
-
-function closeByEscape(evt) {
-  const activeModal = document.querySelector(".modal_open");
-  if (evt.key === "Escape") {
-    closePopup(activeModal);
-  }
-}
-
-//close modal
-closeButton.addEventListener("click", () => {
-  closePopup(contactModal);
+formButton.addEventListener("click", ()=>{
+  modalContactForm.open();
 });
 
-contactModal.addEventListener("click", (evt) => {
-  if (evt.target === contactModal) {
-    closePopup(contactModal);
-  }
-});
 
 const navbar = document.querySelector('.navbar');
 const navbarButton = navbar.querySelector(".navbar__button")
