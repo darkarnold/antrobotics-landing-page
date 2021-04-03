@@ -160,7 +160,7 @@
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
     border-radius: 6px;
     color: #ffffff;
-    background: #393939;
+    /* background: #393939; */
     text-align: center;
   }
   .navbar__popup-container-light {

@@ -19,6 +19,9 @@ formButton.addEventListener("click", () => {
   modalContactForm.open();
 });
 
+const navContainer = document.querySelector(".navbar__popup-container");
+const navLink = document.querySelectorAll(".navbar__popup-link");
+
 const navbar = document.querySelector(".navbar");
 const navbarButton = navbar.querySelector(".navbar__button");
 window.addEventListener("scroll", function () {
@@ -27,10 +30,22 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar_dark");
     navbar.classList.add("navbar_light");
     navbarButton.classList.add("navbar__button_dark");
+
+    navContainer.classList.remove("navbar_dark");
+    navContainer.classList.add("navbar_light");
+    navLink.forEach(function (link) {
+      link.classList.add("navbar__popup-link-light");
+    });
   } else {
     navbarButton.classList.remove("navbar__button_dark");
     navbar.classList.remove("navbar_light");
     navbar.classList.add("navbar_dark");
+
+    navContainer.classList.remove("navbar_light");
+    navContainer.classList.add("navbar_dark");
+    navLink.forEach(function (link) {
+      link.classList.remove("navbar__popup-link-light");
+    });
   }
 });
 
