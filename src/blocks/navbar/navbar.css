@@ -85,9 +85,11 @@
   width: 16px;
   height: 14px;
   display: none;
+  cursor: pointer;
 }
 .navbar__button_dark {
-  background: url("../../images/hide_navlink_black.svg");
+  filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%)
+    hue-rotate(304deg) brightness(97%) contrast(103%);
 }
 
 @media screen and (max-width: 1180px) {
@@ -199,7 +201,23 @@
     text-decoration: none;
     color: #ffffff;
   }
+  .navbar__popup-link,
+  .navbar__popup-link:hover,
+  .navbar__popup-link:active,
+  .navbar__popup-link:visited,
+  .navbar__popup-link:focus {
+    text-decoration: none;
+    color: #ffffff;
+  }
   .navbar__popup-link-light {
+    text-decoration: none;
+    color: #000000;
+  }
+  .navbar__popup-link-light,
+  .navbar__popup-link-light:hover,
+  .navbar__popup-link-light:active,
+  .navbar__popup-link-light:visited,
+  .navbar__popup-link-light:focus {
     text-decoration: none;
     color: #000000;
   }
