@@ -30,7 +30,6 @@ robotsFormButton.addEventListener("click", ()=>{
 const navbar = document.querySelector(".navbar");
 const navbarPopup = document.querySelector(".navbar__list");
 const navbarButton = navbar.querySelector(".navbar__button");
-const closeButton = navbar.querySelector(".navbar__button_active");
 
 navbarButton.addEventListener("click", (event) => {
   navbarPopup.classList.toggle("navbar_open");
