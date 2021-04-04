@@ -1,0 +1,15 @@
+.header__logo-icon {
+  width: 22.75px;
+  height: 27.85px;
+  position: absolute;
+  top: -21px;
+  left: 32px;
+}
+@media screen and (max-width: 720px) {
+  .header__logo-icon {
+    width: 17.75px;
+    height: 21.73px;
+    top: -12px;
+    left: 11px;
+  }
+}

@@ -10,4 +10,8 @@
   line-height: 17px;
   border: none;
   padding: 0;
+  cursor: pointer;
+}
+.form__button:hover {
+  opacity: 80%;
 }

@@ -1,0 +1,18 @@
+.header__column-right-image {
+  width: 215px;
+  height: 284px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 960px) {
+  .header__column-right-image {
+    width: 134px;
+    height: 177px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header__column-right-image {
+    display: none;
+  }
+}

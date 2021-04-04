@@ -1,0 +1,12 @@
+.header__column-left-image {
+  width: 222px;
+  height: 354px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 960px) {
+  .header__column-left-image {
+    display: none;
+  }
+}
