@@ -2,23 +2,27 @@
 
 .button {
   position: absolute;
-  background-color: transparent;
-  width: 18px;
-  height: 12px;
+  top: 40%;
+  width: 52px;
+  height: 52px;
   color: #000;
   border: 0;
   cursor: pointer;
   padding: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-size: contain;
+  background-color: #fff;
+  border-radius: 6px;
+  background-repeat: no-repeat;
   background-position: center;
   mix-blend-mode: normal;
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width: 720px) {
   .button {
-    width: 15.23px;
-    height: 10.15px;
+    width: 44px;
+    height: 44px;
+    top: 0;
+    position: static;
+    transform: none;
   }
 }

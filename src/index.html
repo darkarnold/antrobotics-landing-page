@@ -68,8 +68,8 @@
             <button class="carousel__button">Get more info</button>
           </div>
 
-          <button class="carousel__button-nav carousel__button-nav_left"></button>
-          <button class="carousel__button-nav carousel__button-nav_right"></button>
+          <button class="carousel__button-nav carousel__button-nav_left" aria-label="Next slide"></button>
+          <button class="carousel__button-nav carousel__button-nav_right" aria-label="Previous slide"></button>
         </div>
       </div>
       <h2 class="robots__title">Wide choice of transport robots</h2>
@@ -82,7 +82,7 @@
               alt=""></span>Flexible</li>
         <li class="robots__list-item"><span class="robots__list-icon"><img src="./images/tick.svg"
               alt=""></span>Customizable</li>
-      </ul> 
+      </ul>
     </section>
     <section class="section" id="benefits">
       <h2 class="section__title">Benefits</h2>
@@ -92,13 +92,12 @@
     <section class="gallery" id="gallery">
       <h2 class="gallery__title">Gallery</h2>
       <div class="gallery__carousel">
-        <div class="button__wrapper button__wrapper_left">
-          <button class=" button button_direction_left"></button>
+        <img src="./images/gallery-image.png" alt="robot products" class="gallery__image">
+        <div class="button__wrapper">
+          <button class=" button button_direction_left" aria-label="Next slide">
+          </button>
+          <button class=" button button_direction_right" aria-label="Previous slide"></button>
 
-        </div>
-        <img src="./images/gallery-image.png" alt="" class="gallery__image">
-        <div class="button__wrapper button__wrapper_right">
-          <button class=" button button_direction_right"></button>
         </div>
         <p class="gallery__caption">ANT 100 Robot at work</p>
 
@@ -201,6 +200,19 @@
       <h4 class="card__subtitle"></h4>
       <p class="card__text card__text_type_center card__text_section_team"></p>
     </li>
+  </template>
+  <template class="carousel-gallery-template">
+    <div class="gallery__item">
+      <div class="button__wrapper button__wrapper_left">
+        <button class=" button button_direction_left" aria-label="Next slide"></button>
+
+      </div>
+      <img src="./images/gallery-image.png" alt="robot products" class="gallery__image">
+      <div class="button__wrapper button__wrapper_right">
+        <button class=" button button_direction_right" aria-label="Previous slide"></button>
+      </div>
+      <p class="gallery__caption">ANT 100 Robot at work</p>
+    </div>
   </template>
   <script type="module" src="./pages/index.js"></script>
 </body>

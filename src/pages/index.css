@@ -19,9 +19,7 @@
 @import url("../blocks/card/__text/_type/_center/card__text_type_center.css");
 
 @import url("../blocks/button/button.css");
-@import url("../blocks/button/__wrapper/_right/button__wrapper_right.css");
 @import url("../blocks/button/_direction/_right/button_direction_right.css");
-@import url("../blocks/button/__wrapper/_left/button__wrapper_left.css");
 @import url("../blocks/button/_direction/_left/button_direction_left.css");
 @import url("../blocks/card/__image/_icon/card__image_icon.css");
 @import url("../blocks/card/__text/_section/card__text_section_benefits.css");
