@@ -58,11 +58,11 @@
           <div class="carousel__info-container">
             <h3 class="carousel__item-title">OTTO 100 (pending)</h3>
             <ul class="carousel__item-list">
-              <li>Max payload: <span class="carousel__item-list-span">220 lbs (100kg)</span></li>
-              <li>Size: <span class="carousel__item-list-span">740 x 550 x 310 mm</span></li>
-              <li>Max speed: <span class="carousel__item-list-span">4.3 mph</span></li>
-              <li>Running time: <span class="carousel__item-list-span">4 hrs or 9mi</span></li>
-              <li>Charging time: <span class="carousel__item-list-span">1.2 hrs (0-80%: 0.75 hrs)</span>
+              <li>Max payload: <span class="carousel__item-list-span" id="maxpayload">220 lbs (100kg)</span></li>
+              <li>Size: <span class="carousel__item-list-span" id="size">740 x 550 x 310 mm</span></li>
+              <li>Max speed: <span class="carousel__item-list-span" id="maxspeed">4.3 mph</span></li>
+              <li>Running time: <span class="carousel__item-list-span" id="runtime">4 hrs or 9mi</span></li>
+              <li>Charging time: <span class="carousel__item-list-span" id="chargetime">1.2 hrs (0-80%: 0.75 hrs)</span>
               </li>
             </ul>
             <button class="carousel__button">Get more info</button>
@@ -133,7 +133,8 @@
               94621, USA</span></li>
           <li class="footer__contacts-item">Phone:<span class="footer__contacts-info">+1 (650) 209-0-269</span></li>
           <li class="footer__contacts-item">Email:<span class="footer__contacts-info">info@antrobotics.tech</span></li>
-          <li class="footer__contacts-item"><a class="footer__contacts-link" href="https://www.linkedin.com/company/antrobotics" target="_blank">LinkedIn</a></li>
+          <li class="footer__contacts-item"><a class="footer__contacts-link"
+              href="https://www.linkedin.com/company/antrobotics" target="_blank">LinkedIn</a></li>
         </ul>
         <p class="footer__copyright"> © ANT Robotics, 2020.</p>
 
@@ -201,19 +202,7 @@
       <p class="card__text card__text_type_center card__text_section_team"></p>
     </li>
   </template>
-  <template class="carousel-gallery-template">
-    <div class="gallery__item">
-      <div class="button__wrapper button__wrapper_left">
-        <button class=" button button_direction_left" aria-label="Next slide"></button>
 
-      </div>
-      <img src="./images/gallery-image.png" alt="robot products" class="gallery__image">
-      <div class="button__wrapper button__wrapper_right">
-        <button class=" button button_direction_right" aria-label="Previous slide"></button>
-      </div>
-      <p class="gallery__caption">ANT 100 Robot at work</p>
-    </div>
-  </template>
   <script type="module" src="./pages/index.js"></script>
 </body>
 

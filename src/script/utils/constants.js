@@ -93,7 +93,8 @@ const robotProducts = [
     chargingtime: "1.2 hrs (0-80%: 0.75 hrs)",
   },
   {
-    path: "https://unsplash.com/photos/1DjbGRDh7-E",
+    path:
+      "https://images.unsplash.com/photo-1589254065909-b7086229d08c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
     title: "TX1000",
     maxpayload: "300 lbs(136kg)",
     size: "800 x 400 x210 mm",

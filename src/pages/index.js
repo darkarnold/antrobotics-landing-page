@@ -122,43 +122,85 @@ const prevItemButton = document.querySelector(".button_direction_right");
 const gallleryCaption = document.querySelector(".gallery__caption");
 let itemPosition = 0;
 
-function updateSlideItem() {
+function updateGallerySlideItem() {
   if (itemPosition < galleryItems.length) {
     galleryImage.src = galleryItems[itemPosition].path;
     gallleryCaption.textContent = galleryItems[itemPosition].caption;
   }
 }
 
-function nextSlide() {
+function nextGallerySlideItem() {
   if (itemPosition === galleryItems.length - 1) {
     itemPosition = 0;
   } else {
     itemPosition++;
   }
-  updateSlideItem();
+  updateGallerySlideItem();
 }
 
-function previousSlide() {
+function previousGallerySlideItem() {
   if (itemPosition === 0) {
     itemPosition = galleryItems.length - 1;
   } else {
     itemPosition--;
   }
-  updateSlideItem();
+  updateGallerySlideItem();
 }
 nextItemButton.addEventListener("click", () => {
-  nextSlide();
+  nextGallerySlideItem();
 });
 
 prevItemButton.addEventListener("click", () => {
-  previousSlide();
+  previousGallerySlideItem();
 });
 
-/* carousel
-const robot = new Carousel({
-  carouselSelector: "carousel__items",
-  items: robotProducts,
+// robot products carousel
+const carouselProductImage = document.querySelector(".carousel__item-image");
+const carouselProductTitle = document.querySelector(".carousel__item-title");
+const maxPayload = document.querySelector("#maxpayload");
+const size = document.querySelector("#size");
+const maxSpeed = document.querySelector("#maxspeed");
+const runningTime = document.querySelector("#runtime");
+const chargingTime = document.querySelector("#chargetime");
+const nextProductButton = document.querySelector(".carousel__button-nav_left");
+const previousProductButton = document.querySelector(
+  ".carousel__button-nav_right"
+);
+
+function updateProductCarousel() {
+  if (itemPosition < robotProducts.length) {
+    carouselProductImage.src = robotProducts[itemPosition].path;
+    carouselProductTitle.textContent = robotProducts[itemPosition].title;
+    maxPayload.textContent = robotProducts[itemPosition].maxpayload;
+    size.textContent = robotProducts[itemPosition].size;
+    maxSpeed.textContent = robotProducts[itemPosition].maxspeed;
+    runningTime.textContent = robotProducts[itemPosition].runningtime;
+    chargingTime.textContent = robotProducts[itemPosition].chargingtime;
+  }
+}
+
+function nextProductSlide() {
+  if (itemPosition === robotProducts.length - 1) {
+    itemPosition = 0;
+  } else {
+    itemPosition++;
+  }
+  updateProductCarousel();
+}
+
+function previousProductSlide() {
+  if (itemPosition === 0) {
+    itemPosition = robotProducts.length - 1;
+  } else {
+    itemPosition--;
+  }
+  updateProductCarousel();
+}
+
+nextProductButton.addEventListener("click", () => {
+  nextProductSlide();
 });
 
-robot.setEventListeners();
-*/
+previousProductButton.addEventListener("click", () => {
+  previousProductSlide();
+});
