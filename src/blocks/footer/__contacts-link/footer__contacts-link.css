@@ -1,0 +1,8 @@
+.footer__contacts-link {
+  text-decoration: none;
+  color: #000;
+  text-decoration-line: underline;
+}
+.footer__contacts-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+}

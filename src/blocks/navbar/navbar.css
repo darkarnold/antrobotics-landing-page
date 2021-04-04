@@ -72,6 +72,10 @@
   line-height: 14px;
   letter-spacing: -0.04em;
 }
+.navbar__side-link:hover {
+  text-decoration: none;
+  opacity: 70%;
+}
 
 .navbar__button {
   background: url("../../images/hide_navlinks.svg");

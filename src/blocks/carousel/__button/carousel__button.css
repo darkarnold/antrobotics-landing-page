@@ -11,4 +11,8 @@
   font-size: 9px;
   line-height: 16px;
   text-align: center;
+  cursor: pointer;
+}
+.carousel__button:hover {
+  background: #000000cb;
 }
