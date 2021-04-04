@@ -9,7 +9,7 @@
   margin-top: 20px;
 }
 @media screen and (max-width: 414px) {
-  .modal__button {
+  .modal__close-button {
     height: 15.56px;
     margin-left: 277px;
     margin-bottom: -5px;
