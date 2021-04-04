@@ -35,3 +35,4 @@
 @import url("../blocks/navbar/__button/_active/navbar__button_active.css");
 @import url("../blocks/navbar/__button/_active_dark/navbar__button_active_dark.css");
 @import url("../blocks/navbar/__button/_dark/navbar__button_dark.css");
+@import url("../blocks/navbar/_open/navbar_open.css");
