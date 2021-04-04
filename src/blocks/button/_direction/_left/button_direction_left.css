@@ -1,4 +1,10 @@
 .button_direction_left {
-  left: 17px;
+  left: -81px;
   background-image: url("../../../../images/button-left.svg");
+}
+
+@media screen and (max-width: 960px) {
+  .button_direction_left {
+    left: 51px;
+  }
 }

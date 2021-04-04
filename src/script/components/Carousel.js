@@ -12,7 +12,7 @@ class Carousel {
     });
     let item = this._items[this.itemPosition % this._items.length];
     this.itemPosition += 1;
-    item.className = ".carousel__item_type_hidden";
+    //item.className = ".carousel__item_type_hidden";
     console.log(item);
 
     //this._items[this.itemPosition].classList.add("carousel__item_type_initial");

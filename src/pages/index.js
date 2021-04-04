@@ -4,6 +4,7 @@ import {
   customerBenefitsCards,
   teamCards,
   robotProducts,
+  galleryItems,
 } from "../script/utils/constants.js";
 import ModalWithForm from "../script/components/ModalWithForm.js";
 import Carousel from "../script/components/Carousel.js";
@@ -114,6 +115,49 @@ function getNewCardElement(item, selector) {
   }
   return card;
 }
+
+// render gallery item
+function showGalleryItems(item, selector) {
+  const galleryItemTemplate = document
+    .querySelector(selector)
+    .content.querySelector(".gallery__item");
+
+  const galleryItem = galleryItemTemplate.cloneNode(true);
+  const galleryImage = galleryItem.querySelector(".gallery__image");
+  const galleryCaption = galleryItem.querySelector(".gallery__caption");
+
+  galleryImage.src = item.path;
+  galleryCaption.textContent = item.caption;
+
+  return galleryItem;
+}
+
+/*const galleryElement = showGalleryItems(
+  galleryItems,
+  ".carousel-gallery-template"
+);
+
+const galleryContainer = document.querySelector(".gallery__carousel");
+
+galleryContainer.append(galleryElement);
+const galleryImages = new Section(
+  {
+    items: galleryItems,
+    renderer: (item) => {
+      const galleryElement = showGalleryItems(
+        item,
+        ".carousel-gallery-template"
+      );
+      galleryImages.addItem(galleryElement);
+      //galleryElement.classList.add("carousel__item_type_hidden");
+
+      //galleryElement.classList.add("carousel__item_type_hidden");
+    },
+  },
+  ".gallery__carousel"
+);
+
+galleryImages.render();*/
 
 // carousel
 const robot = new Carousel({

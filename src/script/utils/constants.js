@@ -112,4 +112,27 @@ const robotProducts = [
     chargingtime: "3hrs(0-50%: 1hr)",
   },
 ];
-export { benefitsCards, customerBenefitsCards, teamCards, robotProducts };
+
+const galleryItems = [
+  {
+    path: "./images/gallery-image.png",
+    caption: "ANT 100 Robot at work",
+  },
+  {
+    path:
+      "https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjdG9yeSUyMHJvYm90c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    caption: "At the factory",
+  },
+  {
+    path:
+      "https://images.unsplash.com/photo-1563968743333-044cef800494?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8ZmFjdG9yeSUyMHJvYm90c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    caption: "Robot arm at work",
+  },
+];
+export {
+  benefitsCards,
+  customerBenefitsCards,
+  teamCards,
+  robotProducts,
+  galleryItems,
+};
