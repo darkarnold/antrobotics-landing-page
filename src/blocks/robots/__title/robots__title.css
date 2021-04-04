@@ -1,0 +1,25 @@
+.robots__title {
+  max-width: 420px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 43px;
+  margin: 0;
+  padding: 0;
+  grid-area: title;
+}
+@media screen and (max-width: 960px) {
+  .robots__title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 14px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .robots__title {
+    margin-top: 50px;
+    max-width: 280px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+}

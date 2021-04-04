@@ -1,0 +1,25 @@
+.robots__subtitle {
+  display: flex;
+  justify-self: flex-start;
+  margin: 0;
+  padding: 0;
+  margin-top: 8px;
+  margin-bottom: 28px;
+  max-width: 296px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  grid-area: subtitle;
+}
+@media screen and (max-width: 960px) {
+  .robots__subtitle {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .robots__subtitle {
+    max-width: 280px;
+  }
+}

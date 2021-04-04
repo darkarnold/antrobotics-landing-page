@@ -7,6 +7,12 @@
 }
 @media screen and (max-width: 960px) {
   .header__column-left-image {
+    width: 111px;
+    height: 177px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .header__column-left-image {
     display: none;
   }
 }

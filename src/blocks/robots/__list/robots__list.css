@@ -1,0 +1,17 @@
+.robots__list {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  padding: 0;
+  color: #525252;
+  list-style: none;
+}
+@media screen and (max-width: 960px) {
+  .robots__list {
+    text-align: center;
+    max-width: 152px;
+    margin: 0;
+  }
+}

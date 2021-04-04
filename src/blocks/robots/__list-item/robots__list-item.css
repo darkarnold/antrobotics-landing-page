@@ -1,0 +1,14 @@
+.robots__list-item {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 960px) {
+  .robots__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px 0;
+  }
+  .robots__list-item:last-child {
+    margin: 0;
+  }
+}
