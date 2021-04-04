@@ -4,6 +4,7 @@
 @import url(./__contacts-title/footer__contacts-title.css);
 @import url(./__contacts-list/footer__contacts-list.css);
 @import url(./__contacts-item/footer__contacts-item.css);
+@import url(./__contacts-link/footer__contacts-link.css);
 @import url(./__contacts-info/footer__contacts-info.css);
 @import url(./__copyright/footer__copyright.css);
 .footer {

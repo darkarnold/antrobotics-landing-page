@@ -8,8 +8,12 @@
   cursor: pointer;
   margin-top: 20px;
 }
+.modal__close-button:hover {
+  opacity: 50%;
+}
+
 @media screen and (max-width: 414px) {
-  .modal__button {
+  .modal__close-button {
     height: 15.56px;
     margin-left: 277px;
     margin-bottom: -5px;

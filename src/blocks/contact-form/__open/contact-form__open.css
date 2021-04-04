@@ -13,6 +13,10 @@
   border-radius: 6px;
   color: #ffffff;
 }
+.contact-form__open:hover {
+  background: #f5b129;
+  box-shadow: 0 2px 10px 0 #c9870462, 0 2px 50px 0 rgba(0, 0, 0, 0.097);
+}
 
 @media screen and (max-width: 414px) {
   .contact-form__open {

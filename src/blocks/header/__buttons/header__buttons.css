@@ -1,0 +1,7 @@
+@media screen and (max-width: 720px) {
+  .header__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

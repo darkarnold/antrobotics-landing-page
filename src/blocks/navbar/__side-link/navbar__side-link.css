@@ -1,0 +1,20 @@
+.navbar__side-link {
+  margin: 0;
+  margin-right: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+}
+.navbar__side-link:hover {
+  text-decoration: none;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 720px) {
+  .navbar__side-link {
+    margin-left: 100px;
+    margin-right: 22px;
+  }
+}
