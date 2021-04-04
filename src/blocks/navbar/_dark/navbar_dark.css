@@ -1,0 +1,13 @@
+.navbar_dark {
+  background: #393939;
+  color: #ffffff;
+}
+
+.navbar_dark .navbar__list-item {
+  color: #ffffff;
+}
+@media screen and (max-width: 720px){
+  .navbar_dark .navbar__list {
+    color: #ffffff;
+  }
+}

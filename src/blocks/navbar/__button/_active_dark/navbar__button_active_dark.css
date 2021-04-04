@@ -1,0 +1,6 @@
+@media screen and (max-width: 720px) {
+  .navbar__button_active_dark {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%)
+      hue-rotate(304deg) brightness(97%) contrast(103%);
+  }
+}

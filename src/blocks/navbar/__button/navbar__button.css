@@ -1,0 +1,17 @@
+.navbar__button {
+  background: url("../../../images/hide_navlinks.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  border: 0;
+  width: 16px;
+  height: 14px;
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 720px) {
+  .navbar__button {
+    display: block;
+    margin-right: 12px;
+  }
+}
