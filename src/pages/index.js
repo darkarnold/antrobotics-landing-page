@@ -7,7 +7,6 @@ import {
   galleryItems,
 } from "../script/utils/constants.js";
 import ModalWithForm from "../script/components/ModalWithForm.js";
-import Carousel from "../script/components/Carousel.js";
 
 const modalContactForm = new ModalWithForm({
   modalSelector: ".modal",
@@ -116,53 +115,50 @@ function getNewCardElement(item, selector) {
   return card;
 }
 
-// render gallery item
-function showGalleryItems(item, selector) {
-  const galleryItemTemplate = document
-    .querySelector(selector)
-    .content.querySelector(".gallery__item");
+// Gallery carousel
+const galleryImage = document.querySelector(".gallery__image");
+const nextItemButton = document.querySelector(".button_direction_left");
+const prevItemButton = document.querySelector(".button_direction_right");
+const gallleryCaption = document.querySelector(".gallery__caption");
+let itemPosition = 0;
 
-  const galleryItem = galleryItemTemplate.cloneNode(true);
-  const galleryImage = galleryItem.querySelector(".gallery__image");
-  const galleryCaption = galleryItem.querySelector(".gallery__caption");
-
-  galleryImage.src = item.path;
-  galleryCaption.textContent = item.caption;
-
-  return galleryItem;
+function updateSlideItem() {
+  if (itemPosition < galleryItems.length) {
+    galleryImage.src = galleryItems[itemPosition].path;
+    gallleryCaption.textContent = galleryItems[itemPosition].caption;
+  }
 }
 
-/*const galleryElement = showGalleryItems(
-  galleryItems,
-  ".carousel-gallery-template"
-);
+function nextSlide() {
+  if (itemPosition === galleryItems.length - 1) {
+    itemPosition = 0;
+  } else {
+    itemPosition++;
+  }
+  updateSlideItem();
+}
 
-const galleryContainer = document.querySelector(".gallery__carousel");
+function previousSlide() {
+  if (itemPosition === 0) {
+    itemPosition = galleryItems.length - 1;
+  } else {
+    itemPosition--;
+  }
+  updateSlideItem();
+}
+nextItemButton.addEventListener("click", () => {
+  nextSlide();
+});
 
-galleryContainer.append(galleryElement);
-const galleryImages = new Section(
-  {
-    items: galleryItems,
-    renderer: (item) => {
-      const galleryElement = showGalleryItems(
-        item,
-        ".carousel-gallery-template"
-      );
-      galleryImages.addItem(galleryElement);
-      //galleryElement.classList.add("carousel__item_type_hidden");
+prevItemButton.addEventListener("click", () => {
+  previousSlide();
+});
 
-      //galleryElement.classList.add("carousel__item_type_hidden");
-    },
-  },
-  ".gallery__carousel"
-);
-
-galleryImages.render();*/
-
-// carousel
+/* carousel
 const robot = new Carousel({
   carouselSelector: "carousel__items",
   items: robotProducts,
 });
 
 robot.setEventListeners();
+*/
