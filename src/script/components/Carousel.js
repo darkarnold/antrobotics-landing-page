@@ -6,29 +6,31 @@ class Carousel {
   }
 
   updateSlideItem() {
-    this._items.array.forEach((item) => {
-      item.classList.remove();
-      item.classList.add();
+    this._items.forEach((item) => {
+      //item.classList.remove("carousel__item_type_initial");
+      //item.classList.add("carousel__item_type_hidden");
     });
+    let item = this._items[this.itemPosition % this._items.length];
+    this.itemPosition += 1;
+    item.className = ".carousel__item_type_hidden";
+    console.log(item);
 
-    this._items[this.itemPosition].classList.add();
+    //this._items[this.itemPosition].classList.add("carousel__item_type_initial");
   }
 
   // set eventListeners
   setEventListeners() {
-    this.nextItemButton = this._carouselSelector.querySelector(
-      ".carousel__button-nav_left"
-    );
-    this.prevItemButton = this._carouselSelector.querySelector(
-      ".carousel__button-nav_right"
-    );
+    this.nextItemButton = document.querySelector(".carousel__button-nav_left");
+    this.prevItemButton = document.querySelector(".carousel__button-nav_right");
 
     this.nextItemButton.addEventListener("click", () => {
-      nextSlide();
+      this.nextSlide();
+      //console.log("hell");
     });
 
     this.prevItemButton.addEventListener("click", () => {
-      previousSlide();
+      this.previousSlide();
+      //console.log("123");
     });
   }
 
@@ -50,6 +52,8 @@ class Carousel {
     this.updateSlideItem();
   }
 }
+
+export default Carousel;
 
 /*
 //select all slides
