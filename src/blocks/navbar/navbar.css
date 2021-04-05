@@ -1,4 +1,3 @@
-
 .navbar {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   max-width: 1060px;
@@ -15,7 +14,7 @@
   border-radius: 6px;
   color: #ffffff;
 }
- 
+
 .navbar_dark {
   background: #393939;
   color: #ffffff;
@@ -42,6 +41,8 @@
   margin: 0;
   padding: 0;
   margin-left: 20px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar__list {
@@ -73,7 +74,7 @@
   line-height: 14px;
   letter-spacing: -0.04em;
 }
-.navbar_light .navbar__side-link{
+.navbar_light .navbar__side-link {
   color: #000000;
 }
 .navbar_dark .navbar__side-link {
@@ -146,7 +147,7 @@
     margin-right: 22px;
   }
   .navbar__list {
-     list-style: none;
+    list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,15 +201,12 @@
   .navbar__button_active_dark {
     filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%)
       hue-rotate(304deg) brightness(97%) contrast(103%);
-  } 
+  }
 
-  
   .navbar_open {
     display: flex;
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
   }
-  
-  
 }

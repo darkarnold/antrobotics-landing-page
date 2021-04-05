@@ -6,6 +6,8 @@
   - Technology stack used
   - Team / Contributors
   - Project design
+  - Project configuration
+  - Project link
 
 ## Project Description
 
@@ -32,6 +34,19 @@ This is a project about the redesign of the AntRobotics landing page
 The project images and text for the benefits,gallery,customer-benefits, and team section are configures from the config file named constants.js which is in the scripts directory in the utils folder.
 
 The project is bundled by Webpack.
+
+To run the project in a development environment type
+`npm run dev`
+
+To run the project in a production environment type
+`npm run build`
+
+To push changes to the production site type
+`npm run deploy`
+
+## Project link
+
+[Link to deployed site](https://darkarnold.github.io/antrobotics-landing-page/)
 
 ## Project Figma Link
 
