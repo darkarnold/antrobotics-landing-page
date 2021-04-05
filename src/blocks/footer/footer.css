@@ -7,7 +7,9 @@
 @import url(./__contacts-link/footer__contacts-link.css);
 @import url(./__contacts-info/footer__contacts-info.css);
 @import url(./__copyright/footer__copyright.css);
+
 .footer {
+  font-family: "Inter", Arial, sans-serif;
   background: #f9f9f9;
   border-radius: 14px;
   margin: 10px 0;

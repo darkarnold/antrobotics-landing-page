@@ -1,5 +1,6 @@
 .footer__contacts {
   margin-right: 80px;
+  position: relative;
 }
 @media screen and (max-width: 958px) {
   .footer__contacts {
