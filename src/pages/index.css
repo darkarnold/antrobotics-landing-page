@@ -29,8 +29,3 @@
 @import url("../blocks/carousel/__item/_type/carousel__item_type_initial.css");
 @import url("../blocks/carousel/__button-nav/_left/carousel__button-nav_left.css");
 @import url("../blocks/carousel/__button-nav/_right/carousel__button-nav_right.css");
-
-@import url("../blocks/navbar/__button/_active/navbar__button_active.css");
-@import url("../blocks/navbar/__button/_active_dark/navbar__button_active_dark.css");
-@import url("../blocks/navbar/__button/_dark/navbar__button_dark.css");
-@import url("../blocks/navbar/_open/navbar_open.css");
