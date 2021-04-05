@@ -82,7 +82,7 @@
 }
 .navbar__side-link:hover {
   text-decoration: none;
-  opacity: 70%;
+  opacity: 0.5;
 }
 .navbar__side-link:active {
   text-decoration: none;
