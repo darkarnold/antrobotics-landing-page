@@ -1,3 +1,4 @@
+import "./index.css";
 import Section from "../script/components/Section.js";
 import {
   benefitsCards,
